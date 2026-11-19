@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="pt-br" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Portfólio profissional de Wagner Jorcuvich. Educação e Tecnologia da Informação.">
+  <title>Wagner Jorcuvich | Educação e TI</title>
+  <link rel="icon" type="image/png" href="../assets/images/logo.png">
+  <link rel="preload" as="image" href="../assets/images/foto.jpeg">
+  <link rel="preload" as="font" type="font/woff2" href="../assets/fonts/space-grotesk-latin-variable.woff2" crossorigin>
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <script src="../js/content.js" defer></script>
+  <script src="../js/app.js" defer></script>
+  <script src="../js/contact.js" defer></script>
+  <script src="../js/motion.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Ir para o conteúdo</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Wagner Jorcuvich — início">
+        <img class="brand-logo" src="../assets/images/logo.png" alt="Marca Wagner Jorcuvich" width="64" height="64">
+        <strong>Wagner<br>Jorcuvich<span aria-hidden="true">.</span></strong>
+      </a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#formacao">Formação</a>
+        <a href="#atuacao">Atuação</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#orientacoes">Orientações</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#bancas">Bancas</a>
+        <a href="#publicacoes">Publicações</a>
+        <a class="nav-contact" href="#contato">Contato</a>
+      </nav>
+      <div class="header-controls">
+        <button class="icon-button" id="toggle-motion" type="button" aria-label="Pausar animações" aria-pressed="false" title="Pausar animações">
+          <svg class="icon-pause" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 5v14M15 5v14"/></svg>
+          <svg class="icon-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m9 5 10 7-10 7Z"/></svg>
+        </button>
+        <button class="icon-button" id="toggle-theme" type="button" aria-label="Alternar tema" aria-pressed="true" title="Alternar tema">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/></svg>
+        </button>
+        <button class="icon-button menu-toggle" id="btn-menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer-nav"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+  </header>
+
+  <div class="menu-overlay" id="overlay" hidden></div>
+  <nav class="mobile-nav" id="drawer-nav" aria-label="Navegação para celular" inert aria-hidden="true">
+    <div class="mobile-nav-brand" aria-hidden="true"><img src="../assets/images/logo.png" alt="" width="90" height="90"></div>
+    <div class="mobile-nav-links">
+      <a href="#sobre">Sobre</a><a href="#formacao">Formação</a><a href="#atuacao">Atuação</a>
+      <a href="#projetos">Projetos</a><a href="#orientacoes">Orientações</a><a href="#eventos">Eventos</a>
+      <a href="#bancas">Bancas</a><a href="#publicacoes">Publicações</a><a href="#contato">Contato</a>
+    </div>
+    <button class="text-button" id="drawer-theme" type="button">Tema</button>
+  </nav>
+
+  <main id="inicio" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas id="brand-background" aria-hidden="true"></canvas>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow hero-intro">Wagner Jorcuvich</p>
+          <h1 id="hero-title"><span>Educação em</span> <span>Exatas e</span> <span>Tecnologia da</span> <span class="accent-text">Informação<span class="title-dot" aria-hidden="true">.</span></span></h1>
+          <p class="hero-description">Docência, ciência de dados aplicada e desenvolvimento web. Avaliação educacional, TRI, modelagem preditiva e materiais didáticos digitais.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projetos"><span>Ver projetos</span><span class="button-mark" aria-hidden="true">+</span></a>
+            <a class="button button-outline" href="#contato">Contato</a>
+          </div>
+          <ul class="social-links" id="hero-links"></ul>
+        </div>
+        <div class="hero-visual">
+          <div class="portrait-outline" aria-hidden="true"></div>
+          <div class="portrait-frame" id="portrait-frame">
+            <img class="portrait" src="../assets/images/foto.jpeg" alt="Retrato profissional" width="1194" height="1194" fetchpriority="high">
+            <div class="portrait-grain" aria-hidden="true"></div>
+            <span class="portrait-corner corner-top" aria-hidden="true"></span>
+            <span class="portrait-corner corner-bottom" aria-hidden="true"></span>
+          </div>
+          <div class="logo-stamp" aria-hidden="true"><img src="../assets/images/logo.png" alt="" width="144" height="144"></div>
+          <div class="experience-badge"><span class="stat-value" data-target="22">22</span><span class="stat-label">anos de<br>atuação</span></div>
+          <span class="portrait-caption" aria-hidden="true">WAGNER JORCUVICH</span>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span class="hero-bottom-line" aria-hidden="true"></span><a class="scroll-cue" href="#sobre"><span>Sobre</span><span class="scroll-cue-track" aria-hidden="true"><span></span></span></a></div>
+    </section>
+
+    <section class="section about-section" id="sobre" aria-labelledby="sobre-title">
+      <div class="container about-layout">
+        <div class="section-copy reveal">
+          <div class="section-heading"><span class="section-tick" aria-hidden="true"></span><h2 id="sobre-title">Sobre<span aria-hidden="true">.</span></h2></div>
+          <p class="about-lead">Professor de tecnologia no ensino superior e técnico. Interesse em metodologias ativas, ciência de dados educacionais e engenharia de software com foco no ensino.</p>
+          <ul class="expertise-list"><li>Ciência de dados educacionais</li><li>Ciência de dados em saúde pública</li><li>Desenvolvimento web didático</li><li>TRI e avaliação em larga escala</li></ul>
+        </div>
+        <aside class="card teaching-card reveal" data-motion>
+          <div class="card-float"><div class="card-surface">
+            <span class="teaching-logo" aria-hidden="true"></span>
+            <h3>Áreas de ensino</h3>
+            <div class="tags"><span>Algoritmos e Estruturas</span><span>Ciência de Dados</span><span>Programação Web</span><span>IoT</span><span>Matemática</span><span>Estatística</span><span>Otimização</span><span>Governança em TI</span></div>
+          </div></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-light" id="formacao" aria-labelledby="formacao-title">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-tick" aria-hidden="true"></span><h2 id="formacao-title">Formação<span aria-hidden="true">.</span></h2></div>
+        <div class="grid education-grid" id="grid-formacao"></div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="atuacao" aria-labelledby="atuacao-title">
+      <div class="container experience-layout">
+        <div class="section-heading reveal"><span class="section-tick" aria-hidden="true"></span><h2 id="atuacao-title">Atuação<span aria-hidden="true">.</span></h2></div>
+        <ol class="timeline">
+          <li class="reveal"><div class="time">2025 a atual</div><div class="timeline-item"><h3>Professor | Graduação</h3><p>AED. Ciência de Dados. Governança. IoT.</p></div></li>
+          <li class="reveal"><div class="time">2023 a atual</div><div class="timeline-item"><h3>Professor | Educação Tecnológica</h3><p>Ciência de Dados. Programação Web e Mobile. Back End. Robótica.</p></div></li>
+          <li class="reveal"><div class="time">2014 a 2017</div><div class="timeline-item"><h3>Professor | Ensino Médio</h3><p>Matemática.</p></div></li>
+          <li class="reveal"><div class="time">2008 a 2012</div><div class="timeline-item"><h3>Mercado Financeiro</h3><p>Quantitative Trading. ALM. Risco. BTC (CBLC).</p></div></li>
+          <li class="reveal"><div class="time">2003 a 2008</div><div class="timeline-item"><h3>Professor | Pré-vestibular</h3><p>Matemática.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-light projects-section" id="projetos" aria-labelledby="projetos-title">
+      <div class="container">
+        <div class="section-topline">
+          <div class="section-heading reveal"><span class="section-tick" aria-hidden="true"></span><h2 id="projetos-title">Projetos<span aria-hidden="true">.</span></h2></div>
+          <label class="search-field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span class="sr-only">Buscar por título</span><input id="q" type="search" placeholder="Buscar por título" autocomplete="off" aria-controls="grid-projetos"></label>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar projetos"><button class="chip is-active" type="button" data-cat="todos" aria-pressed="true">Todos</button><button class="chip" type="button" data-cat="educacao" aria-pressed="false">Educação</button><button class="chip" type="button" data-cat="ia" aria-pressed="false">IA</button><button class="chip" type="button" data-cat="web" aria-pressed="false">Web</button></div>
+        <div class="grid projects-grid" id="grid-projetos"></div>
+        <p class="empty-state" id="project-empty" role="status" hidden>Nenhum projeto encontrado.</p>
+        <span class="sr-only" id="project-status" role="status" aria-live="polite"></span>
+      </div>
+    </section>
+
+    <section class="section" id="orientacoes" aria-labelledby="orientacoes-title"><div class="container"><div class="section-heading reveal"><span class="section-tick" aria-hidden="true"></span><h2 id="orientacoes-title">Orientações Acadêmicas<span aria-hidden="true">.</span></h2></div><div class="grid three-columns" id="lista-orientacoes"></div></div></section>
+
+    <section class="section section-light" id="eventos" aria-labelledby="eventos-title"><div class="container"><div class="section-heading reveal"><span class="section-tick" aria-hidden="true"></span><h2 id="eventos-title">Eventos e Palestras<span aria-hidden="true">.</span></h2></div><div class="grid three-columns" id="lista-eventos"></div></div></section>
+
+    <section class="section" id="bancas" aria-labelledby="bancas-title"><div class="container"><div class="section-heading reveal"><span class="section-tick" aria-hidden="true"></span><h2 id="bancas-title">Bancas<span aria-hidden="true">.</span></h2></div><div class="grid three-columns" id="lista-bancas"></div></div></section>
+
+    <section class="section section-light publications-section" id="publicacoes" aria-labelledby="publicacoes-title"><div class="container"><div class="section-heading reveal"><span class="section-tick" aria-hidden="true"></span><h2 id="publicacoes-title">Publicações<span aria-hidden="true">.</span></h2></div><ul class="publications" id="lista-pubs"></ul></div></section>
+
+    <section class="section contact-section" id="contato" aria-labelledby="contato-title">
+      <div class="contact-watermark" aria-hidden="true"></div>
+      <div class="container contact-layout">
+        <div class="contact-copy reveal">
+          <div class="section-heading"><span class="section-tick" aria-hidden="true"></span><h2 id="contato-title">Contato<span aria-hidden="true">.</span></h2></div>
+          <p>Use o formulário ao lado ou escreva para <button id="btn-email" class="text-link" type="button" data-email="jorcuvich@gmail.com">copiar email</button>.</p>
+          <p class="contact-socials">
+            <span class="contact-socials-label">Também estou em:</span>
+            <span class="contact-social-actions">
+              <a class="social-link" data-social="linkedin" href="https://www.linkedin.com/in/jorcuvich/" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M5.37 3a2.37 2.37 0 1 0 0 4.74 2.37 2.37 0 0 0 0-4.74ZM3.4 9h3.94v12H3.4V9Zm6.41 0h3.78v1.64h.05a4.14 4.14 0 0 1 3.72-1.95c3.98 0 4.72 2.62 4.72 6.03V21h-3.94v-5.56c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94V21h-3.94V9Z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+              <span aria-hidden="true">·</span>
+              <a class="social-link" data-social="instagram" href="https://www.instagram.com/wagner.jorcuvich/" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                <span>Instagram</span>
+              </a>
+            </span>
+          </p>
+          <p class="contact-note">Retorno em horário comercial.</p>
+          <img class="contact-logo" src="../assets/images/logo.png" alt="" width="140" height="140" loading="lazy" aria-hidden="true">
+          <span class="sr-only" id="email-status" role="status" aria-live="polite"></span>
+        </div>
+        <div class="form-frame reveal">
+          <form class="contact-form" id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdtyOsp-4biSRcUKMxj-7JwT-HR-Y3EliuGCSKTq-QzIq_MMg/formResponse" method="post" target="_blank" rel="noopener noreferrer" accept-charset="UTF-8" aria-labelledby="contact-form-title" aria-describedby="contact-submit-note">
+            <div class="contact-form-heading">
+              <h3 id="contact-form-title">Contato<span aria-hidden="true">.</span></h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 6 9 7 9-7"/></svg>
+            </div>
+            <div class="contact-fields">
+              <div class="contact-field">
+                <label for="contact-name">Nome <span aria-hidden="true">*</span></label>
+                <input id="contact-name" name="entry.145575682" type="text" autocomplete="name" placeholder="Seu nome" required>
+              </div>
+              <div class="contact-field">
+                <label for="contact-email">Email <span aria-hidden="true">*</span></label>
+                <input id="contact-email" name="entry.58088345" type="email" autocomplete="email" inputmode="email" placeholder="voce@exemplo.com" required>
+              </div>
+              <div class="contact-field contact-field-message">
+                <label for="contact-message">Mensagem <span aria-hidden="true">*</span></label>
+                <textarea id="contact-message" name="entry.1752555835" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+              </div>
+            </div>
+            <label class="contact-consent" for="contact-consent">
+              <input id="contact-consent" name="entry.2103104253" type="checkbox" value="Aceito contato por email">
+              <span>Aceito contato por email</span>
+            </label>
+            <input type="hidden" name="entry.2103104253_sentinel" value="">
+            <input type="hidden" name="fvv" value="1">
+            <input type="hidden" name="pageHistory" value="0">
+            <div class="contact-form-actions">
+              <button class="button button-primary contact-submit" id="contact-submit" type="submit"><span>Enviar mensagem</span><span class="button-mark" aria-hidden="true">+</span></button>
+              <button class="contact-clear" id="contact-clear" type="reset">Limpar rascunho</button>
+            </div>
+            <div class="contact-form-notes">
+              <p class="contact-submit-note" id="contact-submit-note">A confirmação do envio será aberta no Google Forms em uma nova aba.</p>
+              <p class="contact-draft-status" id="contact-draft-status" role="status" aria-live="polite" aria-atomic="true"></p>
+              <p class="contact-submit-status" id="contact-submit-status" role="status" aria-live="polite" aria-atomic="true"></p>
+              <a class="contact-original-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdtyOsp-4biSRcUKMxj-7JwT-HR-Y3EliuGCSKTq-QzIq_MMg/viewform" target="_blank" rel="noopener noreferrer">Abrir formulário original</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="#inicio"><img src="../assets/images/logo.png" alt="Marca Wagner Jorcuvich" width="48" height="48"><span>Wagner Jorcuvich<span aria-hidden="true">.</span></span></a><small>© <span id="ano"></span> Wagner Jorcuvich. Todos os direitos reservados.</small><a class="back-to-top" href="#inicio" aria-label="Voltar ao início">Início</a></div></footer>
+
+  <dialog class="project-dialog" id="dlg-projeto" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+    <div class="dialog-inner"><button class="icon-button dialog-close" type="button" aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button><div class="dialog-accent" aria-hidden="true"></div><h2 id="dialog-title"></h2><p id="dialog-description"></p><ul class="dialog-links"></ul><figure class="chart-figure"><figcaption>Gráfico de exemplo</figcaption><canvas id="chart" width="720" height="260" role="img" aria-label="Gráfico de exemplo"></canvas></figure></div>
+  </dialog>
+
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style><p class="noscript-message">Ative o JavaScript para visualizar formação, projetos e publicações.</p></noscript>
+</body>
+</html>
